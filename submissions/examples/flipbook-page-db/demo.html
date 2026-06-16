@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>3D Flip Book Page</title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="book-container">
+    <div class="book">
+      <!-- Left Page (Static) -->
+      <div class="page left-page">
+        <div class="page-content">
+          <h2>Chapter I</h2>
+          <p class="story-text">The universe opened before them like an unread volume. Countless stars whispered ancient secrets in a language of radiation and light.</p>
+          <span class="page-number">1</span>
+        </div>
+      </div>
+      
+      <!-- Right Page (Flipping Page Container) -->
+      <div class="page-wrapper">
+        <input type="checkbox" id="page-flip" class="flip-checkbox">
+        <label for="page-flip" class="flipping-page">
+          <!-- Front of flipping page -->
+          <div class="page-side front-side">
+            <div class="page-content">
+              <h2>The Journey</h2>
+              <p class="story-text">Click this page to turn it. The ship, a needle of steel and silicon, pierced the darkness, leaving a trail of ion fire in its wake.</p>
+              <span class="page-number">2</span>
+            </div>
+          </div>
+          <!-- Back of flipping page -->
+          <div class="page-side back-side">
+            <div class="page-content">
+              <h2>New Worlds</h2>
+              <p class="story-text">On the other side lay horizons untouched by human sight. Pristine atmospheres and glowing rings of dust welcomed the explorers.</p>
+              <span class="page-number">3</span>
+            </div>
+          </div>
+        </label>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
